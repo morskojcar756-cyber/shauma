@@ -18,7 +18,7 @@ function renderCart() {
         if (!cart[i]) return;
         total += cart[i].count;
 
-        const name = card.querySelector('p').firstChild.textContent;
+        const name = card.querySelector('p')!.firstChild!.textContent;
         const li = document.createElement('li');
 
         const text = document.createElement('span');
